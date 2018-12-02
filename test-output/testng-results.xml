@@ -1,76 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4775" started-at="2018-12-02T15:16:33Z" finished-at="2018-12-02T15:16:37Z">
+  <suite name="Default suite" duration-ms="4021" started-at="2018-12-02T16:55:15Z" finished-at="2018-12-02T16:55:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4775" started-at="2018-12-02T15:16:33Z" finished-at="2018-12-02T15:16:37Z">
+    <test name="Default test" duration-ms="4021" started-at="2018-12-02T16:55:15Z" finished-at="2018-12-02T16:55:19Z">
       <class name="com.qa.resreq.tests.NewGetAPITest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="init" is-config="true" duration-ms="31" started-at="2018-12-02T15:16:33Z" finished-at="2018-12-02T15:16:33Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@1753acfe]" name="initialize" is-config="true" duration-ms="15" started-at="2018-12-02T16:55:15Z" finished-at="2018-12-02T16:55:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="openConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="openConnections" is-config="true" duration-ms="1356" started-at="2018-12-02T15:16:33Z" finished-at="2018-12-02T15:16:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openConnections -->
-        <test-method status="PASS" signature="getJsonResponse()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="getJsonResponse" duration-ms="16" started-at="2018-12-02T15:16:34Z" finished-at="2018-12-02T15:16:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getJsonResponse -->
-        <test-method status="PASS" signature="openConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="openConnections" is-config="true" duration-ms="953" started-at="2018-12-02T15:16:34Z" finished-at="2018-12-02T15:16:35Z">
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="openConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@1753acfe]" name="openConnections" is-config="true" duration-ms="1601" started-at="2018-12-02T16:55:15Z" finished-at="2018-12-02T16:55:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openConnections -->
-        <test-method status="PASS" signature="closeConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="closeConnections" is-config="true" duration-ms="0" started-at="2018-12-02T15:16:34Z" finished-at="2018-12-02T15:16:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeConnections -->
-        <test-method status="PASS" signature="closeConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="closeConnections" is-config="true" duration-ms="0" started-at="2018-12-02T15:16:35Z" finished-at="2018-12-02T15:16:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeConnections -->
-        <test-method status="PASS" signature="openConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="openConnections" is-config="true" duration-ms="716" started-at="2018-12-02T15:16:35Z" finished-at="2018-12-02T15:16:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openConnections -->
-        <test-method status="PASS" signature="verfiyAPIStatusCode()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="verfiyAPIStatusCode" duration-ms="0" started-at="2018-12-02T15:16:35Z" finished-at="2018-12-02T15:16:35Z">
+        <test-method status="PASS" signature="verfiyAPIStatusCode()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@1753acfe]" name="verfiyAPIStatusCode" duration-ms="16" started-at="2018-12-02T16:55:16Z" finished-at="2018-12-02T16:55:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verfiyAPIStatusCode -->
-        <test-method status="PASS" signature="verifyAPIResponseArray()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="verifyAPIResponseArray" duration-ms="15" started-at="2018-12-02T15:16:36Z" depends-on-methods="com.qa.resreq.tests.NewGetAPITest.getJsonResponse" finished-at="2018-12-02T15:16:36Z">
+        <test-method status="PASS" signature="closeConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@1753acfe]" name="closeConnections" is-config="true" duration-ms="0" started-at="2018-12-02T16:55:16Z" finished-at="2018-12-02T16:55:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnections -->
+        <test-method status="PASS" signature="openConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@1753acfe]" name="openConnections" is-config="true" duration-ms="1040" started-at="2018-12-02T16:55:16Z" finished-at="2018-12-02T16:55:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openConnections -->
+        <test-method status="PASS" signature="verifyAPIResponseArray()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@1753acfe]" name="verifyAPIResponseArray" duration-ms="15" started-at="2018-12-02T16:55:17Z" finished-at="2018-12-02T16:55:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAPIResponseArray -->
-        <test-method status="PASS" signature="closeConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="closeConnections" is-config="true" duration-ms="0" started-at="2018-12-02T15:16:36Z" finished-at="2018-12-02T15:16:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeConnections -->
-        <test-method status="PASS" signature="openConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="openConnections" is-config="true" duration-ms="786" started-at="2018-12-02T15:16:36Z" finished-at="2018-12-02T15:16:36Z">
+        <test-method status="PASS" signature="openConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@1753acfe]" name="openConnections" is-config="true" duration-ms="686" started-at="2018-12-02T16:55:18Z" finished-at="2018-12-02T16:55:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openConnections -->
-        <test-method status="PASS" signature="closeConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="closeConnections" is-config="true" duration-ms="0" started-at="2018-12-02T15:16:36Z" finished-at="2018-12-02T15:16:36Z">
+        <test-method status="PASS" signature="closeConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@1753acfe]" name="closeConnections" is-config="true" duration-ms="0" started-at="2018-12-02T16:55:18Z" finished-at="2018-12-02T16:55:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeConnections -->
-        <test-method status="PASS" signature="openConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="openConnections" is-config="true" duration-ms="886" started-at="2018-12-02T15:16:36Z" finished-at="2018-12-02T15:16:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openConnections -->
-        <test-method status="PASS" signature="verifyAPIResponsePerPage()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="verifyAPIResponsePerPage" duration-ms="0" started-at="2018-12-02T15:16:36Z" depends-on-methods="com.qa.resreq.tests.NewGetAPITest.getJsonResponse" finished-at="2018-12-02T15:16:36Z">
+        <test-method status="PASS" signature="verifyAPIResponsePerPage()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@1753acfe]" name="verifyAPIResponsePerPage" duration-ms="0" started-at="2018-12-02T16:55:18Z" finished-at="2018-12-02T16:55:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAPIResponsePerPage -->
-        <test-method status="PASS" signature="closeConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="closeConnections" is-config="true" duration-ms="0" started-at="2018-12-02T15:16:37Z" finished-at="2018-12-02T15:16:37Z">
+        <test-method status="PASS" signature="closeConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@1753acfe]" name="closeConnections" is-config="true" duration-ms="0" started-at="2018-12-02T16:55:18Z" finished-at="2018-12-02T16:55:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeConnections -->
-        <test-method status="PASS" signature="verifyAPIResponseTotal()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@2a2d45ba]" name="verifyAPIResponseTotal" duration-ms="0" started-at="2018-12-02T15:16:37Z" depends-on-methods="com.qa.resreq.tests.NewGetAPITest.getJsonResponse" finished-at="2018-12-02T15:16:37Z">
+        <test-method status="PASS" signature="openConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@1753acfe]" name="openConnections" is-config="true" duration-ms="585" started-at="2018-12-02T16:55:18Z" finished-at="2018-12-02T16:55:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openConnections -->
+        <test-method status="PASS" signature="verifyAPIResponseTotal()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@1753acfe]" name="verifyAPIResponseTotal" duration-ms="0" started-at="2018-12-02T16:55:19Z" finished-at="2018-12-02T16:55:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAPIResponseTotal -->
+        <test-method status="PASS" signature="closeConnections()[pri:0, instance:com.qa.resreq.tests.NewGetAPITest@1753acfe]" name="closeConnections" is-config="true" duration-ms="0" started-at="2018-12-02T16:55:19Z" finished-at="2018-12-02T16:55:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnections -->
       </class> <!-- com.qa.resreq.tests.NewGetAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

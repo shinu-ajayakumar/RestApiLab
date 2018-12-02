@@ -6,10 +6,11 @@
       <class name="com.qa.resreq.tests.NewGetAPITest">
         <methods>
           <include name="verfiyAPIStatusCode"/>
-          <include name="verifyAPIHeadersTotal"/>
+          <include name="verifyAPIResponseArray"/>
+          <include name="initialize"/>
+          <include name="verifyAPIResponsePerPage"/>
           <include name="openConnections"/>
-          <include name="verifyAPIHeadersPerPage"/>
-          <include name="init"/>
+          <include name="verifyAPIResponseTotal"/>
           <include name="closeConnections"/>
         </methods>
       </class> <!-- com.qa.resreq.tests.NewGetAPITest -->
