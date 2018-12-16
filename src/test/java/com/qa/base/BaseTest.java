@@ -1,6 +1,9 @@
 package com.qa.base;
 
 import java.io.IOException;
+import java.security.KeyManagementException;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
 import java.util.Properties;
 
 import org.apache.http.client.ClientProtocolException;
@@ -22,11 +25,17 @@ public class BaseTest {
 	protected JSONObject jsonObject;
 	protected Properties prop;
 	protected String responseString;
-	protected int statusCode;	
+	protected int statusCode;
 
 	@BeforeMethod
-	public void openConnections() throws ClientProtocolException, IOException {
+	public void openConnections() throws ClientProtocolException, IOException, KeyManagementException, NoSuchAlgorithmException, KeyStoreException {		
 		closeableHttpClient = HttpClients.createDefault();
+		/*closeableHttpClient = HttpClients.custom()
+	            .setSSLSocketFactory(new SSLConnectionSocketFactory(SSLContexts.custom()
+	                    .loadTrustMaterial(null, new TrustSelfSignedStrategy())
+	                    .build()
+	                )
+	            ).build();*/
 		httpGet = new HttpGet(serviceApiUrl);
 		closeableHttpResponse = closeableHttpClient.execute(httpGet);
 		statusCode = closeableHttpResponse.getStatusLine().getStatusCode();

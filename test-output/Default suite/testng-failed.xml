@@ -3,17 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.resreq.tests.NewGetAPITest">
+      <class name="com.qa.resreq.tests.GetAPITest">
         <methods>
-          <include name="verfiyAPIStatusCode"/>
-          <include name="verifyAPIResponseArray"/>
-          <include name="initialize"/>
-          <include name="verifyAPIResponsePerPage"/>
+          <include name="verifyGetAPIStatusCodeWithHeaders"/>
           <include name="openConnections"/>
-          <include name="verifyAPIResponseTotal"/>
+          <include name="initialize"/>
           <include name="closeConnections"/>
         </methods>
-      </class> <!-- com.qa.resreq.tests.NewGetAPITest -->
+      </class> <!-- com.qa.resreq.tests.GetAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

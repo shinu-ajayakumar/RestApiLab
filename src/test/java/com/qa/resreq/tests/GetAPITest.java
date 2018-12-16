@@ -2,24 +2,30 @@ package com.qa.resreq.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.qa.api.StatusCodes;
 import com.qa.base.BaseTest;
-import com.qa.utility.ConfigReader;
+import com.qa.utility.ConfigFileReader;
 import com.qa.utility.Utility;
 
-public class NewGetAPITest extends BaseTest {
+public class GetAPITest extends BaseTest {
 
 	@BeforeClass
 	public void initialize() {
-		prop = ConfigReader.getConfig("/src/main/resources/com/qa/config/config.properties");
+		prop = ConfigFileReader.getConfig("/src/main/resources/com/qa/config/config.properties");
 		serviceApiUrl = prop.getProperty("REQRESURL") + "/api/users";
 	}
 
 	@Test
-	public void verfiyAPIStatusCode() {
+	public void verifyGetAPIStatusCode() {
+		Assert.assertEquals(statusCode, StatusCodes.getSuccessCode200());
+	}
+	
+	@Test
+	public void verifyGetAPIStatusCodeWithHeaders() {
+		httpGet.addHeader("username", "shinu");
+		httpGet.addHeader("password", "test@123");
 		Assert.assertEquals(statusCode, StatusCodes.getSuccessCode200());
 	}
 
